@@ -59,8 +59,8 @@ len(vesselDict)
 #assign 440196000 to vesselID
 vesselID = "440196000"
 
-#Look up fleet value for vesselID
-for vessel in vesselDict.keys(): 
-    #Get the vessel associated with the ID
-    if vessel == vesselID:
-        print(f"Vessel # {vesselID} flies the flag of {fleet}")
+#Look up fleet value of vesselID number
+print(vesselDict[vesselID])
+
+#Print statement
+print(f"Vessel # {vesselID} flies the flag of {vesselDict[vesselID]}")
