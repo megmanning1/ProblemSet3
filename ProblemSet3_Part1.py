@@ -31,4 +31,21 @@ print(data_list)
 #Loop through data_list and print full windows path of each dataset
 for x in data_list:
     print(f"{data_folder}\{x}")
-# %%
+
+#%% Task 3 - Lists and Iteration 
+
+#Create empty list variable 
+user_numbers = []
+
+#Add user_integer to user_numbers
+for user_integer in range(3):
+    #Use input function to ask for an integer (and make an integer using int())
+    user_integer = int(input("Enter an integer: "))
+    #add inputs to empty list
+    user_numbers.append(user_integer)
+
+#sort list in ascending numeric order 
+user_numbers.sort()
+
+#print last (highest) value in list
+print(user_numbers[-1])
