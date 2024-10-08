@@ -68,5 +68,3 @@ for user_integer in range(3):
 user_numbers.sort(reverse=True)
 #print the entire list of values
 print(user_numbers)
-
-# %%
