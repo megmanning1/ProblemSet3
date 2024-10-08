@@ -43,14 +43,15 @@ vesselDict = {}
 #Iterate through all lines (except the header) in the data file:
 for datalines in lineList[1:]:
     #Split the data into values
-    LineData = datalines.split()
+    LineData = datalines.split(",")
     #Extract the mmsi value from the list using the mmsi_idx value
     mmsi = LineData[mmsi_idx]
     #Extract the fleet value
     fleet = LineData[fleet_idx]
     #Adds info to the vesselDict dictionary
-    vesselDict[mmsi] = (fleet)
+    vesselDict[mmsi] = fleet
 
+#check to see if the dict has 1040 items
 len(vesselDict)
 
 # %% Task 4.4 
@@ -62,4 +63,4 @@ vesselID = "440196000"
 for vessel in vesselDict.keys(): 
     #Get the vessel associated with the ID
     if vessel == vesselID:
-        print(f"Vessel # {vesselDict[mmsi]} flies the flag of {fleet}")
+        print(f"Vessel # {vesselID} flies the flag of {fleet}")
