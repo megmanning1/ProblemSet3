@@ -49,3 +49,24 @@ user_numbers.sort()
 
 #print last (highest) value in list
 print(user_numbers[-1])
+
+#How I fixed code to return 100, not 20:
+#When I originally ran this loop, I did not convert the user input to an integer, meaning that the inputs were all strings. When i tried to use the sort function to numerically sort the numbers, it wouldn't do that because it was reading them as strings, so I had to change it in order to get it to print 100
+
+#%% Task 3 - Challenge
+#Create empty list variable 
+user_numbers = []
+
+#Add user_integer to user_numbers
+for user_integer in range(3):
+    #Use input function to ask for an integer (and make an integer using int())
+    user_integer = int(input("Enter an integer: "))
+    #add inputs to empty list
+    user_numbers.append(user_integer)
+
+#sort list in reverse numeric order 
+user_numbers.sort(reverse=True)
+#print the entire list of values
+print(user_numbers)
+
+# %%
